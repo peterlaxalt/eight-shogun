@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.row-photos-half {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .row-photos-half h2 {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 29px;
+    padding-bottom: 10px;
+    margin-bottom: 0; }
+  .row-photos-half p, .row-photos-half h2 {
+    color: #07071D; }
+  .row-photos-half a:focus {
+    text-decoration: none; }
+  .row-photos-half .photo-block {
+    flex: 1; }
+    .row-photos-half .photo-block .block-inner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      min-height: 850px;
+      padding-bottom: 10px;
+      background-position: bottom center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      @media screen and (min-width: 1280px) {
+        .row-photos-half .photo-block .block-inner {
+          min-height: 950px; } }
+      @media screen and (min-width: 1450px) {
+        .row-photos-half .photo-block .block-inner {
+          min-height: 1080px; } }
+      .row-photos-half .photo-block .block-inner .block-top, .row-photos-half .photo-block .block-inner .block-bottom {
+        flex: 1; }
+      .row-photos-half .photo-block .block-inner .block-top {
+        padding: 50px 50px 0px 50px;
+        max-width: 600px; }
+        @media (max-width: 767px) {
+          .row-photos-half .photo-block .block-inner .block-top {
+            padding: 30px 30px 0px 30px; } }
+      .row-photos-half .photo-block .block-inner .block-bottom {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+
+.lmnt-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  padding: 0px 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  position: relative;
+  border-radius: 6px; }
+  .lmnt-btn:before {
+    content: '›';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); }
+  .lmnt-btn.lmnt-btn-line-purple {
+    color: #6f50d9;
+    border: 1px solid #6f50d9; }
