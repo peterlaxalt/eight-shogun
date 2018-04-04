@@ -19,6 +19,10 @@
     }
     .photo-block {
         flex:1;
+        @media (max-width:676px) {
+            width:100%;
+            flex:auto;
+        }
         .block-inner {
             display:flex;
             flex-direction:column;

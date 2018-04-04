@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.hero-flush-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.shopify.com/s/files/1/1354/6123/files/img-bed-hero-bg.png?4372034076426573558"); }
+  @media (max-width: 1024px) {
+    .hero-flush-left {
+      background-image: url("https://cdn.shopify.com/s/files/1/1354/6123/files/img-bed-hero-bg-tall.png?9367055984432476520");
+      background-position: center center; } }
+  .hero-flush-left h1 {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 6vh;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif !important;
+    max-width: 550px;
+    line-height: 1.2; }
+    @media (max-width: 1024px) {
+      .hero-flush-left h1 {
+        font-size: 36px; } }
+  .hero-flush-left p, .hero-flush-left h1 {
+    color: #fff; }
+  .hero-flush-left a:focus {
+    text-decoration: none; }
+  .hero-flush-left .txt-desc {
+    color: #1abc9c;
+    font-size: 22px;
+    padding-bottom: 15px; }
+  .hero-flush-left .hero-inner {
+    max-width: 1620px;
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px; }
+    @media (max-width: 1024px) {
+      .hero-flush-left .hero-inner {
+        padding: 80px 40px 40px 40px; } }
+    @media (max-width: 676px) {
+      .hero-flush-left .hero-inner .lmnt-btn {
+        display: flex;
+        width: 100%; } }
+
+.lmnt-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  padding: 0px 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  position: relative;
+  border-radius: 6px; }
+  .lmnt-btn:before {
+    content: '›';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); }
+  .lmnt-btn.lmnt-btn-line-purple {
+    color: #6f50d9;
+    border: 1px solid #6f50d9; }
+  .lmnt-btn.lmnt-btn-fill-purple {
+    background-color: #6f50d9;
+    color: #fff; }

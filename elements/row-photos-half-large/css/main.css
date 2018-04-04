@@ -15,6 +15,10 @@
     text-decoration: none; }
   .row-photos-half .photo-block {
     flex: 1; }
+    @media (max-width: 676px) {
+      .row-photos-half .photo-block {
+        width: 100%;
+        flex: auto; } }
     .row-photos-half .photo-block .block-inner {
       display: flex;
       flex-direction: column;
